@@ -1,0 +1,13 @@
+{% extends 'Layout/layout.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+    {% if image != '' %}
+        <img src="{{ image.FILE_URL }}" alt="{{ image.NAME }}">
+    {% elseif image.IMG != '' %} 
+        <img src="{{ image.IMG }}" alt="{{ image.ID }}">    
+    {% else %}
+        <p>Aucune image téléchargée.</p>
+    {% endif %}
+{% endblock %}

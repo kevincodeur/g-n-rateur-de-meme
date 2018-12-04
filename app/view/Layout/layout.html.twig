@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="http://localhost/memegenerator/">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{% block title 'ACS - MVC' %}</title>
+    </head>
+    <body>
+
+    
+<header>
+          <div class="bgred">
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a href="#" class="navbar-brand" id="logo">MNIM</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse d-flex justify-content-center"
+                        id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li role="presentation" class="nav-item"><a href="#" class="nav-link" id="maintitle" style="color: rgba(0,0,0,0.5);">MY NEM IS MEME</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div><h2 class="text-center" id="first">Welcome to My NEM Is Meme</h2><p class="text-center" id="pone">Selectionnez une image ou uploadez la vôtre pour générer votre meme personnalisé</p>
+</header>
+
+
+         
+         {% block content %}
+        {% endblock %}
+
+        <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+    </body>
+</html>

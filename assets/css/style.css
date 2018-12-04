@@ -1,0 +1,52 @@
+/* Background & Color */
+.bgred {background-color: rgb(255, 60, 0)}
+
+
+
+
+/* Hauteur et Largeur */
+
+.height150 {height: 150px;}
+.height93 {height: 93%}
+.heightmax {height: 100vh;}
+.heightmenu {height: 500px;}
+.height150 {height:200px;}
+
+.maxwidthtotal {max-width: 1920px;}
+.widthinput {width: 250px;}
+.width220 {width: 220px;}
+
+
+/* Border */
+
+.border_r_header {border-right: 2px solid black;}
+
+/* Margin et Padding */
+
+.marginleft0 {margin-left: 0;}
+.paddingleft0 {padding-left:0;}
+
+.marginleft20 {margin-left: 20px;}
+.marginleft50 {margin-left: 50px;}
+.marginleft75 {margin-left: 75px;}
+
+.marginright0 {margin-right: 0;}
+.paddingright0 {padding-right:0;}
+
+.margintop50 {margin-top: 50px;}
+.margintop20 {margin-top: 20px;}
+
+.padding0 {padding: 0px;}
+
+
+/* image */
+
+.imgmenu {height: 340px;
+        width: 340px;}
+
+.imgleft {height: 200px;
+        width:200px;}
+
+/* Overflow */
+
+.overflowauto {overflow: auto;}

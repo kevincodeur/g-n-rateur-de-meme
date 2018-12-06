@@ -16,5 +16,7 @@ class UploadController extends Controller {
           'image'  => $image
         ));
     }
+
+    
 }
 ?>

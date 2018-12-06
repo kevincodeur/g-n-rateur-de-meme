@@ -6,43 +6,43 @@
 
 {% block content %}
     <main>
+                    <h2 class="titreimgleft">Consultez les derniers memes</h2>
                     <form action="saveMeme" method="POST" enctype="multipart/form-data">
-                <div class="d-flex flex-wrap">
-                <div class="d-flex justify-content-between col-lg-6 heightmax flex-wrap overflowauto">
+                <div class="d-flex flex-wrap margintop50">
+                <div class="d-flex justify-content-between col-lg-6 heightmax flex-wrap overflowauto scrollbar-danger scrollbar menuleft">
+
                 {% for image in images %}
                     <div class="col-lg-4 height150 margintop20">
-                        <img class="imgleft" src="./assets/img/{{image.IMG}}.jpg" alt="">
+                        <img class="imgleft" src="{{image.FILE_URL_MODIF}}" alt="">
                     </div>
                 {% endfor %}
                 </div>
                 
                 
-            
+                
                 <div class="col-lg-6 heightmenu">
                     <div class="col-lg-12 row d-flex align-items-center height93">
                         <div class="col-lg-6">
-                        
-                            <img class="imgmenu" src="" alt="" id="imgrecept">
+                             <p class="menuinit text-white zoomIn" id="hiddenp"> Importez votre image pour créer vôtre meme personnalisé</p>
+                            <img name="imgupload" class="imgmenu txthdispnone" src="" alt="" id="imgrecept">
+                            <div id="text-top" class="text-top"></div>
+                            <div id="text-bottom" class="text-bottom"></div>
                         </div>
-                        <div class="offset-lg-1 col-lg-5 flex-column">
+                        <div class="inputmenu txthdispnone offset-lg-1 col-lg-5 flex-column">
 
-                            <label for="txthaut">Texte du haut :</label>
-                                <input class="widthinput" name="txthaut" type="text">
+                            <label for="txthaut" class="txthdispnone">Texte du haut :</label>
+                                <input id="input_txt_top" class="widthinput txthdispnone" name="txthaut" type="text" maxlength="38">
 
-                            <label class="margintop50" for="txtbas">Texte du bas :</label>
-                                <input class="widthinput" name="txtbas" type="text">
+                            <label class="margintop50 txthdispnone" for="txtbas">Texte du bas :</label>
+                                <input id="input_txt_bottom" class="widthinput txthdispnone" name="txtbas" type="text" maxlength="38">
 
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-around">
-                        <input type="button" value="Generate">
-                        <input type="button" value="Télécharger">
-
+                    <div class="d-flex">
                         
-                            <input type="file" id="imgInp" name="imgupload" value="Upload image">
-                            <input type="submit" value="Envoyer le fichier">                            
-                            <input type="hidden" value="">
+                            <input class="inputmenu2 btn btn-secondary" type="file" id="imgInp" name="imgupload" value="Upload image">
+                            <input class="inputmenu2 txthdispnone btn btn-secondary buttondownload" type="submit" id="megahero" value="Envoyer le fichier">                            
                             
                         </form>
                     </div>

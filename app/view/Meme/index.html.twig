@@ -4,10 +4,17 @@
 
 {% block content %}
     {% if image != '' %}
-        <img src="{{ image.FILE_URL }}" alt="{{ image.NAME }}">
-    {% elseif image.IMG != '' %} 
-        <img src="{{ image.IMG }}" alt="{{ image.ID }}">    
+    <div class="blocimg">
+        <img class="imgmodif" src="{{ image.FILE_URL_MODIF }}" alt="{{ image.NAME }}">
+            <div class="button"> 
+                <a class=" btn btn-secondary buttondownload" href="{{ image.FILE_URL_MODIF }}" download="memegenerate-{{ image.NAME}}"><i class="fas fa-download"></i> Télécharger</a>
+            </div>
+    </div>
+    
     {% else %}
+    <div class="blocerreur">
         <p>Aucune image téléchargée.</p>
+    </div>
     {% endif %}
+    
 {% endblock %}

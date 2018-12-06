@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Impact';
+    src: url('Impact.woff2') format('woff2'),
+        url('Impact.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('Impact.woff2') format('woff2'),
+        url('Impact.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Impacted';
+    src: url('Impacted.woff2') format('woff2'),
+        url('Impacted.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
